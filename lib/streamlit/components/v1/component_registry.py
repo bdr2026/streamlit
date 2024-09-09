@@ -108,8 +108,8 @@ def declare_component(
     )
     # the ctx can be None if a custom component script is run outside of Streamlit, e.g. via 'python ...'
     ctx = get_script_run_ctx()
-    if ctx is not None:
-        get_instance().component_registry.register_component(component)
+    # if ctx is not None:
+    get_instance().component_registry.register_component(component)
     return component
 
 
